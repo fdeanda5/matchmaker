@@ -1,1 +1,54 @@
-<h1> Matchmaker </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Love Compatibility Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>True Love Compatibility Test <span class="heart">❤️</span></h1>
+    <div id="quiz">
+        <p>Please rate the following statements from 1 (Strongly Disagree) to 5 (Strongly Agree):</p>
+        <div class="question" id="q1">
+            <p>1. I prefer thrillers and suspense movies over romantic films.</p>
+            <input type="number" min="1" max="5" />
+            <span class="error"></span>
+        </div>
+        <div class="question" id="q2">
+            <p>2. I prefer quiet nights in over going out to parties.</p>
+            <input type="number" min="1" max="5" />
+            <span class="error"></span>
+        </div>
+        <div class="question" id="q3">
+            <p>3. Communication is key in a relationship.</p>
+            <input type="number" min="1" max="5" />
+            <span class="error"></span>
+        </div>
+        <div class="question" id="q4">
+            <p>4. I believe that every relationship requires effort to thrive.</p>
+            <input type="number" min="1" max="5" />
+            <span class="error"></span>
+        </div>
+        <div class="question" id="q5">
+            <p>5. I think it's important to be open-minded and accept different perspectives.</p>
+            <input type="number" min="1" max="5" />
+            <span class="error"></span>
+        </div>
+        <button onclick="calculateCompatibility()">Submit</button>
+    </div>
+
+    <div id="result">
+        <h2>Your Compatibility Score: <span id="score"></span>%</h2>
+        <p id="remark"></p>
+        <span class="heart">❤️</span>
+    </div>
+
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmhqZmF5NHN0ZDNvbjFhZjl2eDlrbzFqZnB5bjVpM2N1dWF2aHN5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c76IJLufpNwSULPk77/giphy.webp" class="gif gif1" alt="Cute GIF 1">
+    <img src="https://i.pinimg.com/originals/33/be/9c/33be9c1a2ba7965828a9bafe4db3502d.gif" class="gif gif2" alt="Cute GIF 2">
+    <img src="https://i.pinimg.com/originals/33/be/9c/33be9c1a2ba7965828a9bafe4db3502d.gif" class="gif gif3" alt="Cute GIF 3">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmhqZmF5NHN0ZDNvbjFhZjl2eDlrbzFqZnB5bjVpM2N1dWF2aHN5MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c76IJLufpNwSULPk77/giphy.webp" class="gif gif4" alt="Cute GIF 4">
+
+    <script src="script.js"></script>
+</body>
+</html>
